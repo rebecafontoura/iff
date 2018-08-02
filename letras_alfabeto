@@ -1,0 +1,13 @@
+letras = ("a".."z").to_a
+entrada = gets.chomp
+entrada.downcase.chars.each do |letra|
+  if letras.include?(letra)
+    letras.delete(letra)
+  end
+end    
+
+if(letras.empty?)
+  puts "tem todas"
+else
+  puts "não tem todas"
+end
