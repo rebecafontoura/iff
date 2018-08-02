@@ -1,13 +1,10 @@
 letras = ("a".."z").to_a
+puts "Digite uma frase para saber se ela tem todas as letras do alfabeto: "
 entrada = gets.chomp
-entrada.downcase.chars.each do |letra|
-  if letras.include?(letra)
-    letras.delete(letra)
-  end
-end    
 
-if(letras.empty?)
-  puts "tem todas"
-else
-  puts "não tem todas"
+entrada.downcase.chars.each do |letra|
+  letras.delete(letra) if letras.include?(letra)
 end
+
+resultado = letras.empty? ? "Sim" : "Não" 
+puts "Tem todas as letras: #{resultado}"
