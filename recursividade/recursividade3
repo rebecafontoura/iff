@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int crescente (int n, int aux){
+  cout<<n-aux<< " ; ";
+if (aux == 1){
+  return n;
+} else {
+  return crescente(n,aux-1);
+}
+}
+int main() {
+int n;
+do{
+  cout << "Fala um número ai meu bacano:\n" ;
+  cin >> n;
+}while(n < 0);
+
+cout << "A ordem é: "<< crescente(n, n);
+}
