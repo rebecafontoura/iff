@@ -13,6 +13,7 @@ contador = 0
 while contador < 11:
   print "A posição é", contador
   contador += 1
+```
 Saída:
 A posição é 0
 A posição é 1
@@ -25,7 +26,7 @@ A posição é 7
 A posição é 8
 A posição é 9
 A posição é 10
-```
+
 ### Contador com "For"
 ```python
 # Esse é a mesma coisa que o de cima, mas é bem mais aconselhável usar o for como contador do que while.
