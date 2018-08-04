@@ -1,11 +1,11 @@
-### Estrutura de Repetição Usando For
+### Estrutura de Repetição Usando FOR
 
 ```Python
 for contador in range (0,10):
   print (contador)
  ```
  
- ### Estrutura de Repetição Usando While
+ ### Estrutura de Repetição Usando WHILE
  
  ```Python
  contador = 0
