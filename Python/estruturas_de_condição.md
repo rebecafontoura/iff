@@ -1,7 +1,7 @@
 ### Estrutura de Condição Usando IF
 
 ```Python
-#Primeiramente devemos atribuir um valor à variável de imediato ou deixar com que o valor seja informado enquanto o programa estiver rodando (que é o caso desse programa).
+#Primeiramente devemos atribuir um valor à variável de imediato (que seria definir um valor aleatório após a igualdade) ou deixar com que o valor seja informado enquanto o programa estiver rodando (que é o caso desse programa).
 #"int" é utilizando quando a sua variável guarda um número inteiro e "input" para que um valor seja inserido enquanto o programa é rodado.
 #Além do "int", há também outros tipos de dados que podem ser inseridos, como "float" para números com ponto decimal e "string", para caracteres.
 
