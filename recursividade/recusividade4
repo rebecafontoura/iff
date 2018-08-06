@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+bool primor (int n, int divisao){
+  if (divisao == 1){
+    return true;
+  }
+  if (n%divisao==0){
+    return false;
+  }
+  return primor (n,divisao-1);
+}
+
+int main (){
+  int n;
+  cout<<"Digite o numero pra ver se é primo: ";
+  cin>>n;
+  if (primor (n,n-1)){
+    cout<<"Primo";
+  }else{
+    cout<<"Não é primo";
+  }
+  return 0;
+}
