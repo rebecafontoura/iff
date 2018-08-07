@@ -1,22 +1,43 @@
 #include <iostream>
 using namespace std;
 
-int somatorio (int n, int m){
-if (n==m){
-  return 1;
-} else {
-  return m + somatorio(n,m-1);
+//sem recursividade
+int somatorio2(int n, int m){
+  int soma=0;
+  for (int i=n; i<=m; i++ ){
+    soma = soma + i;
 }
+return soma;
+}
+
+//com recursividade.
+int somatorio (int n, int m, int soma){
+  soma = soma + n;
+if (n==m){
+  return soma;
+} else {
+  return somatorio(n+1,m, soma);
+  }
 }
 
 int main() {
 int n, m;
+int soma=0;
 do{
-  cout << "De ";
+  cout << "De: ";
   cin >> n;
-  cout << "Até ";
+  cout << "Até: ";
   cin >> m;
   cout << endl;
 }while((n < 0) || (m < 0));
-cout << "O somatório é: "<< somatorio(n, m);
+if (n > m){
+  cout << "O somatório é: "<< somatorio(m, n, soma);
+  cout << endl;
+  cout << "O somatório é: "<< somatorio2(m, n);
+} else {
+ cout << "O somatório é: "<< somatorio(n, m, soma);
+ cout << endl;
+ cout << "O somatório é: "<< somatorio2(n, m);
+}
+
 }
