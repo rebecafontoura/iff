@@ -1,12 +1,22 @@
 #include <iostream>
 using namespace std;
 
+//sem recursividade
 int somatorio(int n){
+  int soma=0;
+  for (int i=0; i<=n; i++ ){
+    soma=soma+i;
+  }
+  return soma;
+}
+
+//com recursividade.
+int somatorio2(int n){
   if(n == 1){
     return 1;
   }
   if(n > 1){
-    return n + somatorio(n - 1);
+    return n + somatorio2(n - 1);
   }
   if(n == 0){
     return 1;
@@ -20,7 +30,8 @@ int main() {
     cin>> n;
   }while(n < 0);
 
+  cout<<"Resultado: "<<somatorio2(n);
+  cout << endl;
   cout<<"Resultado: "<<somatorio(n);
-
   return 0;
 }
