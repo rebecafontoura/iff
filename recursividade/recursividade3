@@ -1,5 +1,16 @@
 #include <iostream>
 using namespace std;
+
+//sem recursividade
+int cresc(int n){
+  cout << "A ordem é: ";
+for (int i=0; i<=n; i++){
+  cout << i << " ; ";
+}
+return 0;
+}
+
+//com recursividade
 int crescente (int n, int aux){
   cout<<n-aux<< " ; ";
 if (aux == 1){
@@ -14,6 +25,7 @@ do{
   cout << "Fala um número ai meu bacano:\n" ;
   cin >> n;
 }while(n < 0);
-
+cresc(n);
+cout << endl;
 cout << "A ordem é: "<< crescente(n, n);
 }
