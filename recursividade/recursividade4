@@ -1,6 +1,17 @@
 #include <iostream>
 using namespace std;
 
+//SEM RECURSIVIDADE
+int primor2 (int n, int cont){
+  for (int i=1; i<=n; i++){
+    if (n%i==0){
+       cont++;
+    }
+  }
+  return cont;
+}
+
+//COM RECURSIVIDADE
 bool primor (int n, int divisao){
   if (divisao == 1){
     return true;
@@ -13,8 +24,16 @@ bool primor (int n, int divisao){
 
 int main (){
   int n;
+    int cont=0;
   cout<<"Digite o numero pra ver se é primo: ";
   cin>>n;
+  cont = primor2(n, cont);
+  if (cont==2){
+     cout<<"Primo";
+  }else{
+    cout<<"Não é primo";
+  }
+  cout<< endl;
   if (primor (n,n-1)){
     cout<<"Primo";
   }else{
