@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+//COM RECURSIVIDADE
+double fibonacci (int t){
+if (t==0 || t==1){
+return 1;
+}else{
+return fibonacci (t-1)+fibonacci (t-2);
+}
+}
+
+int main (){
+int termo;
+double fibo;
+
+cout <<"Digite a posição da sequência de Fibonacci: ";
+cin >> termo;
+cin.ignore ();
+
+if (termo==0){
+cout<<"Nao existe termo 0!\n";
+}
+
+fibo= fibonacci(termo-1);
+cout <<"O "<<termo<<"º termo da sequência de Fibonacci é "<<fibo<<"!\n";
+return 0;
+
+}
