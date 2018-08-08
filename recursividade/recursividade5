@@ -1,6 +1,22 @@
 #include <iostream>
 using namespace std;
 
+//SEM RECURSIVIDADE
+int fibonacci2(int pos){
+  int num=0;
+  int f1=1,f2=1;
+
+  if (pos == 2 || pos == 1){
+    return 1;
+  }
+  for (int i=2; i<pos; i++){
+    num =f1+f2;
+    f1=f2;
+    f2=num;
+  }
+  return num;
+}
+
 //COM RECURSIVIDADE
 double fibonacci (int t){
 if (t==0 || t==1){
@@ -12,15 +28,14 @@ return fibonacci (t-1)+fibonacci (t-2);
 
 int main (){
 int termo;
-double fibo;
-
+int fibo, num;
+do{
 cout <<"Digite a posição da sequência de Fibonacci: ";
 cin >> termo;
-cin.ignore ();
+}while(termo <= 0);
 
-if (termo==0){
-cout<<"Nao existe termo 0!\n";
-}
+num = fibonacci2(termo);
+cout <<"\n O "<<termo<<"º termo da sequência de Fibonacci é "<<num<<"!\n";
 
 fibo= fibonacci(termo-1);
 cout <<"O "<<termo<<"º termo da sequência de Fibonacci é "<<fibo<<"!\n";
