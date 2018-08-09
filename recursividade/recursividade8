@@ -1,0 +1,46 @@
+#include <iostream>
+using namespace std;
+
+//SEM RECURSIVIDADE
+void invert(int vet[]){
+  int aux;
+  for(int i = 0; i < 5; i++){
+      aux = vet[i];
+      vet[i] = vet[9 - i ];
+      vet[9 - i] = aux;
+  }
+}
+
+//COM RECURSIVIDADE
+void invert2(int vet[]){
+//Querido Rafa, insira aqui sua gambiarra.
+}
+
+int main() {
+  char op;
+  int vetor[10] = {6, 1, 9, 29, 200, 37, 43, 52, 1068, 707};
+
+  cout<<"Vetor inicial:\n";
+  for(int i =0; i < 10; i++){
+    cout<<vetor[i]<<"\t";
+  }
+  cout<<"\n";
+
+
+  cout<<"\nVocê deseja que a operação seja realizada com ou sem recursividade? (C/S)";
+  cin>>op;
+
+  if(op == 'C'){
+  invert2(vetor);
+    for(int i =0; i < 10; i++){
+      cout<<vetor[i]<<"\t";
+    }
+  }else if(op == 'S'){
+  invert(vetor);
+    for(int i =0; i < 10; i++){
+      cout<<vetor[i]<<"\t";
+    }
+ }
+
+return 0;
+}
