@@ -13,8 +13,14 @@ int maior(int vet[]){
 }
 
 //com recursividade
-int maior2(int vet[]){
-//SUA CHANCE DE BRILHAR, RAFAEL!
+int maior2(int vet[], int t) {
+  if (t == 1)
+    return vet[t - 1];
+  else
+    if (vet[t - 1] > maior2(vet, t - 1))
+      return vet[t - 1];
+    else
+      return maior2(vet, t - 1);
 }
 
 int main(){
@@ -24,8 +30,8 @@ int main(){
 	num[i]=rand()%99; 
 	cout<<num[i]<<"\t";
 }
-
-cout<<"\n\nSem recursividade: O maior número é: "<<maior(num);
+int num2[] = {2,5,3,4,8,3,2,4,2,6};
+cout<<"\n\nSem recursividade: O maior número é: "<<maior2(num2, 10);
 
 //cout<<"\n\nCom recursividade: O maior número é: "<<maior2(num);
 
