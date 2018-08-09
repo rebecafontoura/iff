@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+//SEM RECURSIVIDADE
+void verif(int num, int vet[]){
+  int op = 0;
+  for(int i = 0; i < 10; i ++){
+    if(vet[i] == num){
+      op = 1;
+      cout<<"O número "<<num<<" foi encontrado no vetor!";
+      break;
+    }
+  }
+  if(op == 0){
+      cout<<"O número "<<num<<" não foi encontrado no vetor!";
+  }
+}
+
+//COM RECURSIVIDADE
+void verif2(){
+//OPAAA MEU MEL, VAI QUE É TUA
+}
+
+int main() {
+int num;
+int vet[10] = {480,	559, 2,	101, 22, 978,	533, 128, 16, 505};
+cout<<"Digite o número que você quer encontrar no vetor:";
+cin>>num;
+
+cout<<"\nSem recursividade:\n";
+verif(num, vet);
+
+return 0;
+}
