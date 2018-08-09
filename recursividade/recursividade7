@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+//sem recursividade
+int maior(int vet[]){
+  int maior = 0;
+  for(int i = 0; i < 10; i++){
+    if(vet[i] > maior){
+      maior = vet[i];
+    }
+  }
+  return maior;
+}
+
+//com recursividade
+int maior2(int vet[]){
+//SUA CHANCE DE BRILHAR, RAFAEL!
+}
+
+int main(){
+  int num[10];
+  cout<<"Números: ";
+  for(int i=0; i<10; i++){ 
+	num[i]=rand()%99; 
+	cout<<num[i]<<"\t";
+}
+
+cout<<"\n\nSem recursividade: O maior número é: "<<maior(num);
+
+//cout<<"\n\nCom recursividade: O maior número é: "<<maior2(num);
+
+}
