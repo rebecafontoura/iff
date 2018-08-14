@@ -12,3 +12,12 @@ for contador in range (0,10):
  while contador < 10:
   print contador
   contador += contador
+```
+
+  ### Estrutura de Repetição Usando FOR para percorrer um array.
+
+```Python
+array = ['a', 'b', 'c']
+for element in array:
+  print (element)
+ ```
