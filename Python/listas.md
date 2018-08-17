@@ -2,7 +2,6 @@
 
 ```Python
 #Uma lista pode conter n elementos de diversos tipos, inclusive outras listas.
-#Exemplo:
 lista = ['a', 1, 1.5, ['w', 'x', 'y', 'z']]
 print(lista)
 #Saída
@@ -13,7 +12,6 @@ print(lista)
  ```Python
 #Os elementos de uma lista podem ser acessados com uma iteração ou pelo índice do elemento.
 #É importante lembrar que o primeiro elemento de uma lista tem a posição 0.
-#Exemplo:
 lista = ['w', 'x', 'y', 'z']
 print(lista[0])
 #Saída
