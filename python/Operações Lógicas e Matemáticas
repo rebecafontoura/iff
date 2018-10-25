@@ -1,0 +1,14 @@
+MATEMÁTICOS: 
++ (soma)
+- (subtração)
+* (multiplicação)
+/ (divisão)
+% (mod)
+
+LÓGICOS
+> (maior, dependendo do contexto)
+>= (maior/igual)
+< (menor, dependendo do contexto)
+<= (menor/igual)
+== (igual)
+!= (diferente)
