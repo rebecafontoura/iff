@@ -1,0 +1,13 @@
+Python é uma linguagem de auto nivel, ou seja, a criação de variaveis é bem simples. Funciona como em ruby. Como por exemplo:
+
+n = 18 /* salva o valor de n como int */
+n = "18" /* o programa reconhece esse valor como string */
+
+Para pegar o valor de uma variavel em python você pode seguir o exemplo abaixo:
+
+nome = input ("Diga seu nome: ") 
+
+e pronto, porém o valor fica salvo como uma string; para definir um valor diferente de string faça como o seguinte exemplo:
+
+idade = int ( input ("Diga sua idade") )
+
