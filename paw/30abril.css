@@ -1,3 +1,7 @@
+.vermelho{
+  color: red;
+}
+
 p{
   color:purple;
   font-size:30pt;
@@ -7,3 +11,68 @@ h1{
   color:white;
   text-shadow: grey 0.1em 0.1em 0.1em
 }
+
+.fundo{
+
+  background-image:url("https://bit.ly/2vSO3CR");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed; /*scroll*/
+}
+
+.transparente{
+  background-color: rgba(105, 50, 200, 0.3);
+  height: 200px;
+  width: 20%;
+}
+
+.texto{
+  color: blue;
+  text-decoration: underline;
+  text-align: center;
+  text-transform: uppercase;
+  text-indent: 5%;
+}
+
+.fonte{
+  font-family: arial;
+  font-size: 30pt;
+  font-style: italic;
+}
+
+a.link{
+  color: yellow;
+}
+
+a.hover{
+  color: green;
+  font-size: 30pt;
+}
+
+a.visited{
+  color: pink;
+}
+
+a.active{
+  color: grey;
+}
+
+/* 2. Seletor de Classe
+
+.vermelho{
+  color: red;
+}
+
+3. Seledor de ID
+
+#meuId{
+  color: green;
+}
+
+ID > classe > seletor de h1, p, etc...
+
+
+
+*/
