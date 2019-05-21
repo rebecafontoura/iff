@@ -1,0 +1,42 @@
+.lista{
+  list-style-image: url("https://stat.ameba.jp/user_images/20140520/10/naofii/7a/7e/g/o0020002012946979382.gif");
+  list-style-position: outside; /* ou inside*/
+  list-style-type: circle; /* valores: disc, lower-alpha, upper-alpha, decimal, decimal-leading-zero, lower-greek, lower-latin, lower-roman, none, square, upper-roman, upper latin */
+}
+.verde{
+  background-color: green;
+}
+
+.div1{
+  background-color: turquoise;
+  border: 3px dotted black;
+  padding: 10px;
+  width: 200px;
+  height: 150px;
+}
+.div2{
+  background-color: lightblue;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  text-align: center;
+  padding:5px;
+  top:10px;
+  left: 520px;
+  position: absolute;
+}
+
+
+img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.div3{
+  width: 100%;
+  height: 500px;
+  background-color:pink;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+}
