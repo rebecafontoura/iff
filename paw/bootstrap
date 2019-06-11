@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body, html{
+      height: 100%;
+      margin: 0;
+    }
+    .imagem{
+      background-image: url('https://storage.googleapis.com/planet4-canada-stateless/2018/06/GP0STRIY2.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      height: 50%;
+      background-position: 75% 25%;
+    }
+    .gp{
+      height: 40px;
+    }
+  </style>
+  <title>Aula Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class = "imagem">
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="#">
+    <img src="https://logodownload.org/wp-content/uploads/2017/05/greenpeace-logo.png" alt="logo" class="gp">
+  </a>
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 2</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 3</a>
+    </li>
+  </li>
+  <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown button
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+</li>
+  </ul>
+</nav>
+  </div>
+
+  <!--Conteúdos em Grid-->
+  <div class = "row">
+  <div class ="container-fluid text-center">
+    <div class="col-lg-4 col-sm-12">
+      <p>Imagem1</p>
+      <img src="https://png.pngtree.com/element_origin_min_pic/16/12/07/542b818a396c8c1766592bf267910dfc.jpg" class="imagem2"/>
+    </div>
+    <div class = "col-lg-4 col-sm-12">
+      <p>Imagem2</p>
+      <img src="https://png.pngtree.com/element_origin_min_pic/16/12/07/542b818a396c8c1766592bf267910dfc.jpg" class="imagem2"/>
+    </div>
+    <div class = "col-lg-4 col-sm-12">
+      <p>Imagem3</p>
+      <img src="https://png.pngtree.com/element_origin_min_pic/16/12/07/542b818a396c8c1766592bf267910dfc.jpg" class="imagem2"/>
+    </div>
+  </div>
+</div>
+  <div class = "row">
+  </div>
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Los_Angeles%2C_Winter_2016.jpg" alt="Los Angeles">
+    </div>
+    <div class="carousel-item">
+      <img src="https://ogimg.infoglobo.com.br/in/22626206-e83-aba/FT1500A/652/76351867_Lago-Michigan-skyline-visto-do-Aquario-Chicago-BV-Exclusiva.-Foto-de-Carla-Lencastre-especi.jpg" alt="Chicago">
+    </div>
+    <div class="carousel-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg" alt="New York">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+</body>
+</html>
