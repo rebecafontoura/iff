@@ -3,7 +3,17 @@
 <head>
 <meta charset="utf-8">
 	<title>Page Title</title>
+
+	<script>
+	function teste(){
+		var nome;
+		nome = document.getElementById("nome").value;
+		alert(nome);
+	}
+	</script>
 </head>
+
+
 <body bgcolor=lightgreen>
 	<form> <!--Cria um formulário-->
 		<fieldset> <!--Cria uma borda no formulário-->
@@ -98,12 +108,9 @@
 				<option value="TO">TO
 				</option>
 			</select><br /><br />
-			<input type="submit" value="Enviar" />
+			<input type="submit" value="Enviar" onclick="teste()" />
 			<input type="reset" value="Reset" />
 		</fieldset>
-
 	</form>
-
-
 </body>
 </html>
