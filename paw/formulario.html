@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Page Title</title>
+</head>
+<body bgcolor=lightgreen>
+	<form> <!--Cria um formulário-->
+		<fieldset> <!--Cria uma borda no formulário-->
+			<legend>formulario</legend> <!-- define o "título" do fieldset -->
+			<label>Nome:</label>
+			<input type="text" id="nome" name="nome" placeholder="Seu Nome" maxlength="50">
+			<br/>
+			<br/>
+			<label>Senha:</label>
+			<input type="password" id="pass" name="pass" maxlength="30" required/>
+			<br />
+			<br />
+			<label>Nascimento:</label>
+			<input type="date" id="nasc" name="nasc"/>
+			<br />
+			<br />
+			<label>E-mail:</label>
+			<input type="email" id="email" name="email"/>
+			<br />
+			<br />
+			<label>Sexo:</label>
+			<input type="radio" id="sexo" name="sexo" value="M" />M
+			<input type="radio" id="sexo" name="sexo" value="F" checked/>F
+			<br /><br />
+			<label>Filmes que já assisti:</label>
+			<br />
+			<input type="checkbox" name="HP" id="HP" value="Harry Potter" />Harry Potter
+			<input type="checkbox" name="LOTR" id="LOTR" value="Lord of the Rings" />Lord of the Rings
+			<input type="checkbox" name="SW" id="SW" value="Star Wars" />Star Wars
+			<input type="checkbox" name="matrix" id="matrix" value="Matrix" />Matrix
+			<input type="checkbox" name="rocky" id="rocky" value="Rocky" />Rocky
+			<input type="checkbox" name="alita" id="alita" value="Alita" />Alita
+			<br /><br />
+			<label>Estado:</label>
+			<select name="estado" id="estado">
+				<option value="AC">AC
+				</option>
+				<option value="AL">AL
+				</option>
+				<option value="AP">AP
+				</option>
+				<option value="AM">AM
+				</option>
+				<option value="BA">BA
+				</option>
+				<option value="CE">CE
+				</option>
+				<option value="DF">DF
+				</option>
+				<option value="ES">ES
+				</option>
+				<option value="GO">GO
+				</option>
+				<option value="MA">MA
+				</option>
+				<option value="MT">MT
+				</option>
+				<option value="MS">MS
+				</option>
+				<option value="MG">MG
+				</option>
+				<option value="PA">PA
+				</option>
+				<option value="AC">AC
+				</option>
+				<option value="PB">PB
+				</option>
+				<option value="PR">PR
+				</option>
+				<option value="PE">PE
+				</option>
+				<option value="AC">AC
+				</option>
+				<option value="PI">PI
+				</option>
+				<option value="RJ">RJ
+				</option>
+				<option value="RN">RN
+				</option>
+				<option value="RS">RS
+				</option>
+				<option value="RO">RO
+				</option>
+				<option value="RR">RR
+				</option>
+				<option value="SC">SC
+				</option>
+				<option value="SP">SP
+				</option>
+				<option value="SE">SE
+				</option>
+				<option value="TO">TO
+				</option>
+			</select><br /><br />
+			<input type="submit" value="Enviar" />
+			<input type="reset" value="Reset" />
+		</fieldset>
+
+	</form>
+
+
+</body>
+</html>
